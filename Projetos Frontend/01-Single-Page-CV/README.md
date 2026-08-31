@@ -1,12 +1,10 @@
-# CV de Página Única
+# Single Page CV
 
-Curriculo Teste de Página Única
-https://roadmap.sh/projects/single-page-cv
+## Objetivo
 
-## Tecnologias
+Criar um currículo de uma página utilizando HTML. Com foco na estrutura e entendimento das tags de HTML.
 
-- HTML
+## Links
 
-## Live Demo
-
-https://sofia-de-sousa.github.io/CVPaginaUnica/
+[Página do Projeto](https://roadmap.sh/projects/single-page-cv),
+[Live Demo](https://sofia-de-sousa.github.io/projetos-roadmap.sh/Projetos%20Frontend/01-Single-Page-CV/)
