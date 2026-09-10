@@ -14,6 +14,9 @@ h1, h2, h3, h4, .copyrights{
     font-weight: 400;
 }
 
+
+/* HEADER */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -44,26 +47,28 @@ li, a{
     font-size: 20px;
 }
 
-.hero{
+/* HOMEPAGE */
+
+.hero, .middle-containers, .projects, .reviews div, .block, .copyrights{
     display: flex;
+}
+
+.hero, .projects, .block{
     flex-direction: column;
+}
+
+.hero, .copyrights{
     justify-content: center;
     align-items: center;          
 }
 
-.hero h1{
-    margin-bottom: 2px;
-    font-size: 32px;
-}
-
 .hero p{
-    margin-bottom: 100px;
+    margin-block: 0px 100px;
     font-size: 14px;
     color: darkgray;
 }
 
 .middle-containers{
-    display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
@@ -72,24 +77,17 @@ li, a{
     border-bottom: 3px solid black;
 }
 
-.projects{
-    display: flex;
-    flex-direction: column;
+.projects, .education{
     flex: 3;
 }
 
 .projects h2{
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-top: 20px;
-    margin-bottom: 8px;
+    padding-inline: 24px;
+    margin-block: 20px 8px;
 }
 
 .projects li{
-    padding-left: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 24px;
+    padding: 12px 24px;
 }
 
 
@@ -107,7 +105,6 @@ li, a{
 .projects li:last-child{
     border-bottom: none;
 }
-
 
 .work{
     flex: 4;
@@ -139,13 +136,9 @@ li, a{
     margin-block: 8px;
 }
 
-.work-1, .work-2 a{
+.work-1 a, .work-2 a{
     font-size: 14px;
     color: blue;
-}
-
-.education{
-    flex: 3;
 }
 
 .education h2{
@@ -162,11 +155,11 @@ li, a{
 }
 
 .reviews h2{
-    margin: 24px;
+    padding-inline: 24px;
+    margin-block: 20px;
 }
 
 .reviews div{
-    display: flex;
     justify-content: flex-start;
     align-items: stretch;
     width: 100%;
@@ -174,8 +167,6 @@ li, a{
 }
 
 .block{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: start;
     border: 3px solid black;
@@ -192,8 +183,57 @@ li, a{
 
 .block footer{
     margin-block: 10px 16px;
+    color: darkgray;
 }
 
 .copyrights{
-    
+    margin: 40px;
+}
+
+/* PROJECTS PAGE */
+
+.projectspage-main, .projectspage-section h1, .projectspage-section > p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectspage-section{
+    max-width: 40%;
+}
+
+.projectspage-section h1{
+    font-size: 32px;
+    margin-block: 40px 20px;   
+}
+
+.projectspage-section > p{
+    margin-block: 0px 40px;
+    color: darkgray;
+}
+
+.projectspage-section ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border: 3px solid black;
+}
+
+.projectspage-section li{
+    padding: 20px;
+    font-size: 16px;
+    border-bottom: 3px solid black;
+}
+
+.projectspage-section li:last-child{
+    border-bottom: none;
+}
+
+.projectspage-section li > p{
+    text-align: justify;
+}
+
+.projectspage-section a:hover{
+    color: blue;    
 }
