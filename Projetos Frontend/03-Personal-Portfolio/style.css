@@ -190,50 +190,50 @@ li, a{
     margin: 40px;
 }
 
-/* PROJECTS PAGE */
+/* PROJECTS PAGE & ARTICLES PAGE */
 
-.projectspage-main, .projectspage-section h1, .projectspage-section > p{
+.not-homepg-main, .not-homepg-section h1, .not-homepg-section > p{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.projectspage-section{
+.not-homepg-section{
     max-width: 40%;
 }
 
-.projectspage-section h1{
+.not-homepg-section h1{
     font-size: 32px;
     margin-block: 40px 20px;   
 }
 
-.projectspage-section > p{
+.not-homepg-section > p{
     margin-block: 0px 40px;
     color: darkgray;
 }
 
-.projectspage-section ul{
+.not-homepg-section ul{
     margin: 0px;
     padding: 0px;
     list-style: none;
     border: 3px solid black;
 }
 
-.projectspage-section li{
+.not-homepg-section li{
     padding: 20px;
     font-size: 16px;
     border-bottom: 3px solid black;
 }
 
-.projectspage-section li:last-child{
+.not-homepg-section li:last-child{
     border-bottom: none;
 }
 
-.projectspage-section li > p{
+.not-homepg-section li > p{
     text-align: justify;
 }
 
-.projectspage-section a:hover{
+.not-homepg-section a:hover{
     color: blue;    
 }
