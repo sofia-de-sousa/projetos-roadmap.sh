@@ -13,3 +13,8 @@ https://sofia-de-sousa.github.io/projetos-roadmap.sh/
 
 [Página do Projeto](https://roadmap.sh/projects/basic-html-website), 
 [Versão Construída](<Projetos Frontend/02-Basic-HTML-Site>)
+
+### Personal Portfolio
+
+[Página do Projeto](https://roadmap.sh/projects/portfolio-website), 
+[Versão Construída](<Projetos Frontend/03-Personal-Portfolio>)

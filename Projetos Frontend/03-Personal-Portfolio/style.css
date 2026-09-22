@@ -23,6 +23,7 @@ h4,
 
 header{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0px 16px;
@@ -44,6 +45,10 @@ a{
 
 .nav-links{
     list-style: none;
+}
+
+.nav-links{
+    padding-left: 0px;
 }
 
 .nav-links li{
@@ -85,7 +90,6 @@ a{
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
-    max-height: 50vh;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
 }
@@ -95,9 +99,12 @@ a{
     flex: 3;
 }
 
-.projects h2{
+.projects h2,
+.work h2,
+.education h2,
+.reviews h2{
     padding-inline: 24px;
-    margin-block: 20px 8px;
+    margin-block: 20px;
 }
 
 .projects li{
@@ -120,6 +127,10 @@ a{
     border-bottom: none;
 }
 
+.projects a:hover{
+    color: rgba(13, 13, 13, 0.851);;
+}
+
 .work{
     flex: 4;
     border-left: 3px solid black;
@@ -127,28 +138,24 @@ a{
 
 }
 
-.work h2{
-    padding: 0px 24px;
-    margin-block: 20px 0px;
+.work-1,
+.work-2{
+    padding: 12px 24px;
 }
 
 .work-1{
-    padding: 12px 24px 20px;
+    border-bottom: 3px solid black;
 }
 
-.work-2{
-    padding: 12px 24px;
-    border-top: 3px solid black;
-}
+.work-1 h4,
+.work-2 h4{
+    margin-block: 8px 16px;
+    font-size: 18px;
+} 
 
-.work-1 h4, 
 .work-1 p, 
-.work-1 a{
-    margin-block: 6px 8px;
-}
-
-.work-2 h4, 
-.work-2 p, 
+.work-1 a,
+.work-2 p,
 .work-2 a{
     margin-block: 8px;
 }
@@ -159,29 +166,24 @@ a{
     color: blue;
 }
 
-.education h2{
-    padding: 0px 24px;
-    margin-block: 20px 8px;
+.education p{
+    padding: 12px 24px;
+    margin: 0px;
 }
 
-.education p{
-    padding: 12px 24px
+.education ul{
+    margin: 0px;
+    padding-block: 12px;
 }
 
 .education li{
     padding: 4px;
 }
 
-.reviews h2{
-    padding-inline: 24px;
-    margin-block: 20px;
-}
-
 .reviews div{
     justify-content: flex-start;
     align-items: stretch;
     width: 100%;
-    gap: 24px;
 }
 
 .block{
@@ -190,12 +192,11 @@ a{
     border: 3px solid black;
     border-radius: 40px;
     padding: 24px;
-    width: 10%;
-    margin-inline: 20px 0px;
+    width: 15%;
+    margin-inline: 20px;
 }
 
 .block p{
-    max-width: 24ch;
     margin-top:16px;
 }
 
@@ -206,13 +207,13 @@ a{
 
 .copyrights{
     margin: 40px;
+    font-size: 22px;
 }
 
 /* PROJECTS PAGE & ARTICLES PAGE */
 
 .not-homepg-main, 
-.not-homepg-section h1, 
-.not-homepg-section > p{
+.not-homepg-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,6 +225,7 @@ a{
 }
 
 .not-homepg-section > p{
+    text-align: center;
     margin-block: 0px 40px;
     color: darkgray;
 }
@@ -270,8 +272,8 @@ textarea{
 }
 
 .contact-section{
-    min-width: 20%;
     max-width: 40%;
+    width: 40%;
 }
 
 
@@ -299,7 +301,7 @@ textarea{
 }
 
 .form-box textarea{
-    height: 100px;
+    height: 120px;
     padding: 16px;
 }
 
@@ -321,3 +323,118 @@ textarea{
     background-color: rgba(13, 13, 13, 0.851);
 }
     
+/* MOBILE */
+
+@media (max-width: 768px){
+
+header,
+.nav-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.nav-left img{
+    margin-top:20px
+}
+
+.nav-left h2{
+    margin-block: 8px;
+}
+
+.nav-links li{
+    justify-content: center;
+    padding: 5px
+}
+
+.hero h1,
+.not-homepg-section h1,
+.contact-section h1{
+    margin-block: 6px;
+    font-size: 28px;
+}
+
+.hero p,
+.not-homepg-section > p,
+.contact-section p{
+    margin-bottom: 24px;
+}
+
+.middle-containers{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects,
+.work h2,
+.education h2,
+.reviews h2{
+    text-align: center;
+}
+
+.projects h2,
+.work h2,
+.education h2,
+.reviews h2{
+    padding: 0px;
+    margin-block: 12px;
+    font-size: 24px;
+
+}
+
+.projects ul,
+.work-1,
+.work-2,
+.education p,
+.education ul{
+    background-color: rgb(214, 215, 221);
+}
+
+.projects li:first-child{
+    border-top: 3px solid black;
+}
+
+.projects li:last-child{
+    border-bottom: 3px solid black;
+}
+
+.work{
+    border: none;
+}
+
+.work-1{
+    border-top: 3px solid black;
+}
+
+.work-2{
+    border-bottom: 3px solid black;
+}
+
+.education p:first-of-type{
+    border-top: 3px solid black;
+}
+
+.reviews div{
+    flex-direction: column;
+    align-items: center;
+}
+
+.block{
+    width: 80%;
+}
+
+.copyrights{
+    margin: 12px
+}
+
+.not-homepg-section{
+    max-width: 90%;
+}
+
+.contact-section{
+    max-width: 90%;
+    width: 90%;
+}
+
+}
