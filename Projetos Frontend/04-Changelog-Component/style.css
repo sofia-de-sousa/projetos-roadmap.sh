@@ -34,32 +34,71 @@ time{
     flex-direction: row;
     justify-content: center ;
     align-items: center;
+    position: relative;
     width: 100%;
     gap: 20px;
-    background-color: beige;
 }
 
 .changelog time{
-    flex: 2;
+    flex: 4.5;
     text-align: right;
+}
+
+.timeline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    position: relative;
+    align-self: stretch;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+.timeline span{
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: black;
 }
 
 .changelog p{
     display: flex;
     align-items: center;
-    flex: 3;
+    position: relative;
+    flex: 5.5;
+    gap: 20px;
     text-align: left;
-    gap: 20px
 }
 
-.changelog p::before{
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+.link-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 250px;
+    height: 48px;
+    border-radius: 8px;
     background-color: black;
-    flex-shrink: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    cursor: pointer;
 }
-
-

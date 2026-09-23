@@ -18,3 +18,8 @@ https://sofia-de-sousa.github.io/projetos-roadmap.sh/
 
 [Página do Projeto](https://roadmap.sh/projects/portfolio-website), 
 [Versão Construída](<Projetos Frontend/03-Personal-Portfolio>)
+
+### Changelog Component
+
+[Página do Projeto](https://roadmap.sh/projects/changelog-component), 
+[Versão Construída](<Projetos Frontend/04-Changelog-Component>)
