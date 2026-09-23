@@ -1,0 +1,65 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: ghostwhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hero{
+    text-align: center;
+    margin-block: 60px;
+}
+
+.hero h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.hero p,
+time{
+    color: darkgray;
+}
+
+.changelog-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.changelog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    background-color: beige;
+}
+
+.changelog time{
+    flex: 2;
+    text-align: right;
+}
+
+.changelog p{
+    display: flex;
+    align-items: center;
+    flex: 3;
+    text-align: left;
+    gap: 20px
+}
+
+.changelog p::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    flex-shrink: 0;
+}
+
+
