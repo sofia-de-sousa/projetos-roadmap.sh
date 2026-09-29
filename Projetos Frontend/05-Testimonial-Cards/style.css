@@ -11,7 +11,7 @@ body{
 main{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .testimonial-main-container{
@@ -32,7 +32,8 @@ main{
 
 @media (max-width: 1024px){
     .testimonial-main-container{
-        width: 100%;
+        width: 90%;
+        padding-block: 32px;
     }
 
     .testimonial-top-cards{
@@ -57,7 +58,14 @@ main{
     margin: 24px
 }
 
+.testimonial-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .testimonial-1 p{
+    margin-top: 0px;
     padding: 16px;
     color: white;
     background-color: black;
@@ -100,6 +108,25 @@ main{
 .author-2-info strong{
     font-size: 20px;
     font-weight: 400;
+}
+
+.author-1-info span,
+.author-2-info span{
+    font-size: 14px;
+}
+
+.testimonial-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 12px 24px;
+}
+
+.testimonial-2 p{
+    font-size: 18px;
+    
 }
 
 .testimonial-3{
