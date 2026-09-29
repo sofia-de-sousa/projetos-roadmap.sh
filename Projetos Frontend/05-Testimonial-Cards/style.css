@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: ghostwhite;
+    font-family: "Roboto", sans-serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+    border: thin solid black;
+    border-radius: 20px;
+}
+
+.testimonial-top-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1024px){
+    .testimonial-main-container{
+        width: 100%;
+    }
+
+    .testimonial-top-cards{
+        flex-direction: column;
+    }
+}
+
+.img-1,
+.img-2,
+.author-images img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial-1,
+.testimonial-2,
+.testimonial-3,
+.testimonial-4{
+    flex: 1;
+    margin: 24px
+}
+
+.testimonial-1 p{
+    padding: 16px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+}
+
+.testimonial-1 p::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid black;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: 30px;
+    bottom: -20px;
+}
+
+.author-1,
+.author-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.author-1-info,
+.author-2-info{
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+
+.author-1-info strong,
+.author-2-info strong{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.testimonial-3{
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-3 img{
+    flex: 1.5;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.author-3{
+    display: flex;
+    flex-direction: column;
+    flex: 3.5;
+}
+
+.testimonial-4 p{
+    text-align: center;
+    padding: 24px;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
