@@ -23,3 +23,8 @@ https://sofia-de-sousa.github.io/projetos-roadmap.sh/
 
 [Página do Projeto](https://roadmap.sh/projects/changelog-component), 
 [Versão Construída](<Projetos Frontend/04-Changelog-Component>)
+
+### Testimonial Cards
+
+[Página do Projeto](https://roadmap.sh/projects/testimonial-cards), 
+[Versão Construída](<Projetos Frontend/05-Testimonial-Cards>)
