@@ -28,3 +28,8 @@ https://sofia-de-sousa.github.io/projetos-roadmap.sh/
 
 [Página do Projeto](https://roadmap.sh/projects/testimonial-cards), 
 [Versão Construída](<Projetos Frontend/05-Testimonial-Cards>)
+
+### Datepicker UI
+
+[Página do Projeto](https://roadmap.sh/projects/datepicker-ui), 
+[Versão Construída](<Projetos Frontend/06-Datepicker-UI>)
