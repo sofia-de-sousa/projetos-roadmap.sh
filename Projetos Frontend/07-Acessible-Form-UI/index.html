@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Acessible Form UI</title>
+    </head>
+    <body>
+        <main>
+            <!-- Form -->
+            <form>
+                <!-- Full Name -->
+                <label for="full-name">Full Name</label>
+                <input type="text" name="full-name" id="full-name" placeholder="What should we call you?" required>
+
+                <!-- Email -->
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="What is your email?" required>
+
+                <!-- Password -->
+                <label for="enter-password">Enter Password</label>
+                <div>
+                    <input type="password" name="enter-password" id="enter-password" placeholder="xxxxxxxx" required>
+                    <button type="button">Show</button>
+                </div>
+
+                <!-- Confirm Password -->
+                <label for="confirm-password">Confirm Password</label>
+                <div>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="xxxxxxxx" required>
+                    <button type="button">Show</button>
+                </div>
+
+                <!-- Button -->
+                <button type="submit">Update Profile</button>
+            </form>
+
+            <!---->
+            <div class="profile-completeness">
+                <!-- Progress Bar -->
+                <div class="profile-progress">
+                    <span>65%</span>
+                    <progress id="progress-bar" value="65" max="100">65%</progress>
+                </div>
+                <p>Profile Completeness</p>
+
+                <!-- Checklist -->
+                <div class="checklist-box">
+                    <ul>
+                        <li>Create Account</li>
+                        <li>Update Roadmap Features</li>
+                        <li>Setup Public Profile</li>
+                        <li>Complete your first project</li>
+                        <li>Invite your Friends</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
