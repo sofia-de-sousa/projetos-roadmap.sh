@@ -5,36 +5,41 @@ Esse repositório contém projetos front-end construidos com base no caminho de 
 ## Lista de Projetos
 https://sofia-de-sousa.github.io/projetos-roadmap.sh/
 
-### Single Page CV
+### 01 - Single Page CV
 [Página do Projeto](https://roadmap.sh/projects/single-page-cv),
 [Versão construída](<Projetos Frontend/01-Single-Page-CV>)
 
-### Basic HTML Website
+### 02 - Basic HTML Website
 
 [Página do Projeto](https://roadmap.sh/projects/basic-html-website), 
 [Versão Construída](<Projetos Frontend/02-Basic-HTML-Site>)
 
-### Personal Portfolio
+### 03 - Personal Portfolio
 
 [Página do Projeto](https://roadmap.sh/projects/portfolio-website), 
 [Versão Construída](<Projetos Frontend/03-Personal-Portfolio>)
 
-### Changelog Component
+### 04 - Changelog Component
 
 [Página do Projeto](https://roadmap.sh/projects/changelog-component), 
 [Versão Construída](<Projetos Frontend/04-Changelog-Component>)
 
-### Testimonial Cards
+### 05 - Testimonial Cards
 
 [Página do Projeto](https://roadmap.sh/projects/testimonial-cards), 
 [Versão Construída](<Projetos Frontend/05-Testimonial-Cards>)
 
-### Datepicker UI
+### 06 - Datepicker UI
 
 [Página do Projeto](https://roadmap.sh/projects/datepicker-ui), 
 [Versão Construída](<Projetos Frontend/06-Datepicker-UI>)
 
-### Acessible Form UI
+### 07 - Acessible Form UI
 
 [Página do Projeto](https://roadmap.sh/projects/accessible-form-ui), 
 [Versão Construída](<Projetos Frontend/07-Acessible-Form-UI>)
+
+### 08 - Image Grid Layout
+
+[Página do Projeto](https://roadmap.sh/projects/image-grid?fl=0), 
+[Versão Construída](<Projetos Frontend/08-Image-Grid-Layout>)
