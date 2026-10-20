@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    background-color: ghostwhite;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    list-style: none;
+}
+
+.links li{
+    position: relative;
+    font-size: 22px;    
+}
+
+.links li:not(:last-child)::after {
+    content: "·";
+    color: #7d7c7c;
+    position: absolute;
+    left: calc(100% + 24px);
+    transform: translateX(-50%);
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+.links span{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    white-space: nowrap;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.links span::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid black;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.links li:hover span,
+.links li:focus-within span{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 600px){
+    .links{
+        gap: 32px;
+    }
+
+    .links li:not(:last-child)::after {
+        left: calc(100% + 16px);
+    }
+
+    .links span{
+        min-width: 120px;
+        padding: 16px;
+        white-space: normal;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px){
+    .links{
+        gap: 16px;
+    }
+
+    .links li:not(:last-child)::after {
+        left: calc(100% + 8px);
+    }
+}   
